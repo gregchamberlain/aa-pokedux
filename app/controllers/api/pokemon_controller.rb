@@ -1,7 +1,6 @@
 class Api::PokemonController < ApplicationController
   def create
     @pokemon = Pokemon.new(pokemon_params)
-
     if @pokemon.save
       render :show
     else
@@ -20,6 +19,7 @@ class Api::PokemonController < ApplicationController
   end
 
   def show
+    sleep(2)
     @pokemon = Pokemon.find(params[:id])
   end
 

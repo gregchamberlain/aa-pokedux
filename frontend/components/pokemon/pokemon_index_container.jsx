@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { objectToArray } from '../../util/selector';
 
 const mapStateToProps = state => ({
-  pokemon: objectToArray(state.pokemon)
+  pokemon: objectToArray(state.pokemon),
+  loading: state.loading
 });
 
 
