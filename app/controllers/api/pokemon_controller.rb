@@ -19,7 +19,7 @@ class Api::PokemonController < ApplicationController
   end
 
   def show
-    sleep(2)
+    sleep(1)
     @pokemon = Pokemon.find(params[:id])
   end
 
